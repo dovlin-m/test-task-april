@@ -1,17 +1,13 @@
 <template>
-  <v-footer
-    app
-  >
+  <v-footer app>
     <span>&copy; {{ new Date().getFullYear() }}</span>
   </v-footer>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
   name: "FooterComponent"
-}
+})
 </script>
-
-<style scoped>
-
-</style>

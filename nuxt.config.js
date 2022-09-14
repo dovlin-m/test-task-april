@@ -3,11 +3,13 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  router: {
+    base: '/test-task-april/'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - test-april',
-    title: 'test-april',
+    title: 'test-task-april',
     htmlAttrs: {
       lang: 'en'
     },

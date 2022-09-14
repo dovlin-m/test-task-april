@@ -68,8 +68,11 @@ typings/
 # nuxt.js build output
 .nuxt
 
-# package-lock.json
-package-lock.json
+# Nuxt generate
+dist
+
+# package-lock.jsondnsyhdhash
+package-lock.jsonshshsh
 
 # vuepress build output
 .vuepress/dist

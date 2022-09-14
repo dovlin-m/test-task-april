@@ -2,13 +2,15 @@
   <MainContent />
 </template>
 
-<script>
-import MainContent from "../components/MainContent";
-export default {
+<script lang="ts">
+import Vue from "vue";
+import MainContent from "~/components/MainContent.vue";
+
+export default Vue.extend({
   name: 'IndexPage',
 
   components: {
     MainContent
   }
-}
+})
 </script>

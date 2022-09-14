@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeaderComponent title="TTApril" :subtitel="'comment ' + comment.id"/>
+    <HeaderComponent title="Test April" :pageTitle="'comment ' + comment.id"/>
       <v-container>
         <v-list two-line color="#004D40">
           <v-list-item>
@@ -52,11 +52,12 @@
 </template>
 
 <script lang="ts">
+import Vue from "vue";
 import HeaderComponent from "~/components/HeaderComponent.vue";
 import FooterComponent from "~/components/FooterComponent.vue";
 import axios from "axios";
 
-export default {
+export default Vue.extend({
   validate({ params }: any) {
     return /^\d+$/.test(params.id)
   },
@@ -69,8 +70,7 @@ export default {
   async asyncData({ params }: any) {
     const response = await axios.get(`https://jsonplaceholder.typicode.com/comments/${params.id}`)
     let comment = response.data
-    console.log(comment )
     return { comment }
   }
-}
+})
 </script>

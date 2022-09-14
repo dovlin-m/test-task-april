@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <HeaderComponent title="TTApril" subtitle="list"/>
+    <HeaderComponent title="Test April" pageTitle="comments" />
     <v-main>
       <v-container>
         <Nuxt />
@@ -20,31 +20,6 @@ export default {
   components: {
     HeaderComponent,
     FooterComponent
-  },
-
-  data () {
-    return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      subtitle: 'list',
-      title: 'TTApril'
-    }
   }
 }
 </script>
